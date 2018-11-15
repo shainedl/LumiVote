@@ -8,7 +8,7 @@ const candidates = [
 		'image': 'TishJamesAG.jpg',
 		'cover': 'NYC_image.jpg',
 		'issues': [
-			{ 'topic': 'Abortion & Contraception', 'statement': ' “Protect a woman’s right to choose.”' },
+			{ 'topic': 'Abortion & Contraception:', 'statement': ' “Protect a woman’s right to choose.”' },
 		],
 	}
 ];
