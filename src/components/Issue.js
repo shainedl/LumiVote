@@ -1,6 +1,3 @@
-// src/components/Issue.js
-"use strict";
-
 import React from 'react';
 
 export default class Issue extends React.Component {

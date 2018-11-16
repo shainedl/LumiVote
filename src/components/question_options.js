@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import * as actions from '../actions';
+
 class QuestionOptions extends Component {
   constructor(props) {
     super(props);
@@ -9,8 +11,8 @@ class QuestionOptions extends Component {
     };
   }
 
-  handleSelect(img, id) {
-    this.setState({ selectedOption: img });
+  handleSelect(answer, id) {
+    this.setState({ selectedOption: answer });
     this.props.addOption(id);
   }
 
@@ -18,12 +20,12 @@ class QuestionOptions extends Component {
     const root = '/assets/images/';
     let { options, id } = this.props;
 
-    return options.map(({ img }) => {
+    return options.map(({ answer }) => {
       return (
-        <div key={img} className="col-md-4">
-          <div onClick={() => this.handleSelect(img, id)} className={this.state.selectedOption === img ? 'thumbnail chosen' : 'thumbnail'}>
-            <img id="option-img" src={`${root}${img}`} />
-            <i className={this.state.selectedOption === img ? 'fa fa-check-square-o fa-lg' : 'fa fa-square-o fa-lg'}></i>
+        <div key={answer}>
+          <div onClick={() => this.handleSelect(answer, id)} className={this.state.selectedOption === answer ? 'thumbnail chosen' : 'thumbnail'}>
+            <i className={this.state.selectedOption === answer ? 'fa fa-check-square-o fa-lg' : 'fa fa-square-o fa-lg'}></i>
+            {answer}
           </div>
         </div>
       );
@@ -32,12 +34,11 @@ class QuestionOptions extends Component {
 
   render() {
     return (
-      <div className="row">
+      <div className="option-row">
         {this.renderOptions()}
       </div>
     );
   }
 }
 
-//export default connect(null, actions)(QuestionOptions);
-export default QuestionOptions;
+export default connect(null, actions)(QuestionOptions);

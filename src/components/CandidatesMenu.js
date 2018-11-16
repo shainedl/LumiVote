@@ -1,18 +1,27 @@
-'use strict';
-
 import React from 'react';
-import { Link } from 'react-router';
+import { Route, Link } from 'react-router-dom';
 
-export default class CandidatesMenu extends React.Component {
-  render() {
-    return (
-      <nav className="candidates-menu">
-        {this.props.candidates.map(menuCandidate => {
-          return <Link key={menuCandidate.id} to={`/candidate/${menuCandidate.id}`} activeClassName="active">
-            {menuCandidate.name}
-          </Link>;
-        })}
-      </nav>
-    );
-  }
-}
+const shortName = (fullname) => {
+  const [name, surname] = fullname.split(' ');
+  return `${name[0]}. ${surname}`;
+};
+
+const CandidateMenuLink = ({ id, to, label }) => (
+  <Route path={`/candidate/${id}`}>
+    {({ match }) => (
+      <Link to={to} className={match ? 'active' : ''}>{label}</Link>
+    )}
+  </Route>
+);
+
+export const CandidatesMenu = ({ candidates }) => (
+  <nav className="candidates-menu">
+    {
+      candidates.map(candidate =>
+        <CandidateMenuLink key={candidate.id} id={candidate.id} to={`/candidate/${candidate.id}`} label={shortName(candidate.name)} />,
+      )
+    }
+  </nav>
+);
+
+export default CandidatesMenu;

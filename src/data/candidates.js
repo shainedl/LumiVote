@@ -1,6 +1,3 @@
-// src/data/candidates.js
-"use strict";
-
 const candidates = [
 	{
 		'id': 'tish',
@@ -8,13 +5,13 @@ const candidates = [
 		'image': 'TishJamesAG.jpg',
 		'cover': 'NYC_image.jpg',
 		'issues': [
-			{ 'topic': 'Criminal Justice & Public Safety', 'statement': ' “Codifying and Expanding the Attorney General’s role as Special Prosecutor to include authority over non-fatal civilian police shootings, hate crimes and sexual assault by police and corrections officers, as well as the ability to hold prosecutors and other law enforcement officials who attempt to instruct investigations into police violence accountable.”'},		
-			{ 'topic': 'Economy', 'statement': ' “Scrutinize practices and industries that have benefited from deregulation under the Trump Administration, and those that are currently posing a significant threat to our economy.”'},
-			{ 'topic': 'Education', 'statement': ' "Expose and prosecute for-profit colleges that make false promises to New Yorkers who seek higher education."'},
-			{ 'topic': 'Environment', 'statement': ' "Advance legislation and take legal action that would ban fracking infrastructure in New York."'},	
-			{ 'topic': 'Government Reform', 'statement': ' “The Attorney General must have the permanent power to investigate and prosecute public corruption and enforce ethics violations.”'},
-			{ 'topic': 'Guns', 'statement': ' “New York has long been a leader in the fight against gun violence, but we must do more to make our laws even more comprehensive, ramp up enforcement of the laws already on the books, and use creative thinking to make up for obstruction on the federal level and lax gun laws in other states.”'},
-			{ 'topic': 'Healthcare', 'statement': ' "Enforce access to reproductive healthcare."'}
+			{ 'topic': 'Criminal Justice & Public Safety:', 'statement': ' “Codifying and Expanding the Attorney General’s role as Special Prosecutor to include authority over non-fatal civilian police shootings, hate crimes and sexual assault by police and corrections officers, as well as the ability to hold prosecutors and other law enforcement officials who attempt to instruct investigations into police violence accountable.”'},		
+			{ 'topic': 'Economy:', 'statement': ' “Scrutinize practices and industries that have benefited from deregulation under the Trump Administration, and those that are currently posing a significant threat to our economy.”'},
+			{ 'topic': 'Education:', 'statement': ' "Expose and prosecute for-profit colleges that make false promises to New Yorkers who seek higher education."'},
+			{ 'topic': 'Environment:', 'statement': ' "Advance legislation and take legal action that would ban fracking infrastructure in New York."'},	
+			{ 'topic': 'Government Reform:', 'statement': ' “The Attorney General must have the permanent power to investigate and prosecute public corruption and enforce ethics violations.”'},
+			{ 'topic': 'Guns:', 'statement': ' “New York has long been a leader in the fight against gun violence, but we must do more to make our laws even more comprehensive, ramp up enforcement of the laws already on the books, and use creative thinking to make up for obstruction on the federal level and lax gun laws in other states.”'},
+			{ 'topic': 'Healthcare:', 'statement': ' "Enforce access to reproductive healthcare."'}
 		]
 	},
 	{
@@ -23,10 +20,10 @@ const candidates = [
 		'image': 'WoffordAG.jpg',
 		'cover': 'NYC_image.jpg',
 		'issues': [
-			{ 'topic': 'Criminal Justice & Public Safety', 'statement': ' “As New York State Attorney General, I would work very closely with county District Attorneys to ensure law enforcement transparency and accountability throughout NYS.”'},		
-			{ 'topic': 'Drug Policy', 'statement': ' "As New York State Attorney General, I will investigate the distribution and manufacturing of illicit opioids with local district attorneys, and engage the community in prevention and recovery efforts."'},	
-			{ 'topic': 'Economy', 'statement': ' "To unlock the greatness of our state, we need a government that spends money honestly, and wisely—and supports policies that make New York a place for entrepreneurs to start and grow their businesses.”'},
-			{ 'topic': 'Government Reform', 'statement': ' "As Attorney General, my top priority will be to tackle the political corruption that has plagued our government for too long. I will go after public corruption, fight back against the lousy contracts, and bring charges against those who violate the public trust, regardless of their title.”'}
+			{ 'topic': 'Criminal Justice & Public Safety:', 'statement': ' “As New York State Attorney General, I would work very closely with county District Attorneys to ensure law enforcement transparency and accountability throughout NYS.”'},		
+			{ 'topic': 'Drug Policy:', 'statement': ' "As New York State Attorney General, I will investigate the distribution and manufacturing of illicit opioids with local district attorneys, and engage the community in prevention and recovery efforts."'},	
+			{ 'topic': 'Economy:', 'statement': ' "To unlock the greatness of our state, we need a government that spends money honestly, and wisely—and supports policies that make New York a place for entrepreneurs to start and grow their businesses.”'},
+			{ 'topic': 'Government Reform:', 'statement': ' "As Attorney General, my top priority will be to tackle the political corruption that has plagued our government for too long. I will go after public corruption, fight back against the lousy contracts, and bring charges against those who violate the public trust, regardless of their title.”'}
 		]
 	},
 	{
@@ -48,8 +45,8 @@ const candidates = [
 		'image': 'SussmanAG.png',
 		'cover': 'NYC_image.jpg',
 		'issues': [
-			{ 'topic': 'Criminal Justice & Public Safety', 'statement': ' “We need a separate office under the AG which can and will properly and thoroughly investigate all cases of alleged police/corrections officer misconduct. These investigations must be done independent of DOCSS, local police agencies, local Das and the Commission on Corrections which has a very mixed history.”'},		
-			{ 'topic': 'Government Reform', 'statement': ' "I will strengthen the state’s Public Integrity Unit, push for a sweeping public finance law to disconnect big money from state politics, and prosecute those who exploit their positions for personal gain."'}
+			{ 'topic': 'Criminal Justice & Public Safety:', 'statement': ' “We need a separate office under the AG which can and will properly and thoroughly investigate all cases of alleged police/corrections officer misconduct. These investigations must be done independent of DOCSS, local police agencies, local Das and the Commission on Corrections which has a very mixed history.”'},		
+			{ 'topic': 'Government Reform:', 'statement': ' "I will strengthen the state’s Public Integrity Unit, push for a sweeping public finance law to disconnect big money from state politics, and prosecute those who exploit their positions for personal gain."'}
 		]
 	},
 	{
@@ -58,10 +55,10 @@ const candidates = [
 		'image': 'SliwaAG.jpg',
 		'cover': 'NYC_image.jpg',
 		'issues': [
-			{ 'topic': 'Animal Rights', 'statement': ' "It is unconscionable to euthanize animals due to lack of space.  It\'s time to finally realize a NO-KILL New York shelter system. "'},	
-			{ 'topic': 'Criminal Justice & Public Safety', 'statement': ' "Animal abusers are prohibited from owning & interacting with animals but needs to increase penalties and be STATEWIDE."'},		
-			{ 'topic': 'Education', 'statement': ' "All schools should institute mandatory animal education.  Studies indicate that most people incarcerated for violent crimes started off abusing animals. This education can expose young children to the plight of animals and teach them empathy toward living beings."'},
-			{ 'topic': 'Government Reform', 'statement': ' "There should be established throughout the New York State Attorney General’s Office an IAD – Internal Affairs Department similar to what police have. Their job would be to administer Integrity Tests to keep the system honest.”'}
+			{ 'topic': 'Animal Rights:', 'statement': ' "It is unconscionable to euthanize animals due to lack of space.  It\'s time to finally realize a NO-KILL New York shelter system. "'},	
+			{ 'topic': 'Criminal Justice & Public Safety:', 'statement': ' "Animal abusers are prohibited from owning & interacting with animals but needs to increase penalties and be STATEWIDE."'},		
+			{ 'topic': 'Education:', 'statement': ' "All schools should institute mandatory animal education.  Studies indicate that most people incarcerated for violent crimes started off abusing animals. This education can expose young children to the plight of animals and teach them empathy toward living beings."'},
+			{ 'topic': 'Government Reform:', 'statement': ' "There should be established throughout the New York State Attorney General’s Office an IAD – Internal Affairs Department similar to what police have. Their job would be to administer Integrity Tests to keep the system honest.”'}
 		]
 	}
 ];

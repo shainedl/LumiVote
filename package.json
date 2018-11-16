@@ -1,37 +1,47 @@
 {
-  "name": "lumivote",
+  "name": "redux-simple-starter",
   "version": "1.0.0",
-  "description": "Welcome to the Votem Team's repo! This is where we build our product LumiVote, the one-stop solution for making an informed voting choice!",
+  "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
+  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shainedl/LumiVote.git"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shainedl/LumiVote/issues"
-  },
-  "homepage": "https://github.com/shainedl/LumiVote#readme",
-  "dependencies": {
-    "babel-cli": "^6.11.4",
-    "babel-core": "^6.13.2",
-    "babel-preset-es2015": "^6.13.2",
-    "babel-preset-react": "^6.11.1",
-    "ejs": "^2.5.9",
-    "express": "^4.14.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-redux": "^5.1.1",
-    "react-router": "^2.6.1",
-    "redux": "^4.0.1"
-  },
   "devDependencies": {
-    "babel-loader": "^6.2.10",
-    "http-server": "^0.9.0",
-    "webpack": "^1.13.3"
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.2",
+    "babel-preset-stage-1": "^6.1.18",
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express-mailer": "^0.3.1",
+    "lodash": "^3.10.1",
+    "morgan": "^1.7.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-keydown": "^1.6.2",
+    "react-redux": "^4.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^3.0.4",
+    "redux-logger": "^2.7.0",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.1.0"
   }
 }
