@@ -66,6 +66,7 @@ class Result extends Component {
                   autoFocus />
               </div>
               <button className="btn btn-primary">Email My Results</button>
+              <button className="btn btn-primary">Learn More About The Candidates</button>
             </form>
           </div>
         </div>

@@ -6,6 +6,9 @@ import candidates from '../data/candidates';
 
 export default class CandidatePage extends React.Component {
     render() {
+        <div className="logo-background">
+            <img className="img-logo" src={`../../../assets/images/logo2.jpg`}/>
+        </div>
         const id = this.props.match.params.id;
         const candidate = candidates.filter((candidate) => candidate.id === id)[0];
         const headerStyle = { backgroundImage: `url(/assets/images/${candidate.cover})` };
