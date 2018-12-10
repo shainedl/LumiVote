@@ -16,10 +16,7 @@ function App() {
             <Link to="/">HOME</Link>
           </div>
           <div>
-            <Link to="/quiz">TAKE A QUIZ</Link>
-          </div>
-          <div>
-            <Link to="/candidates">MEET YOUR CANDIDATES</Link>
+            <Link to="/quiz">GET STARTED</Link>
           </div>
           <div>
             <Link to="/about">ABOUT</Link>

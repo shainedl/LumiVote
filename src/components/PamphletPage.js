@@ -8,7 +8,7 @@ export default class PamphletPage extends Component {
     return (
       <div className="pamphlet">
         <div className="logo-background">
-                    <img className="img-logo" src={`../../../assets/images/logo2.jpg`}/>
+          <img className="img-logo" src={`../../../assets/images/logo2.jpg`}/>
         </div>
         <div className="candidates-selector">
           {candidates.map(candidateData => <CandidatePreview key={candidateData.id} {...candidateData} />)}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 export default class HomePage extends Component {
     render() {
@@ -6,6 +7,9 @@ export default class HomePage extends Component {
         <div className="home-container">
             <div className="logo-background">
                 <img className="img-logo" src={`../../../assets/images/logo2.jpg`}/>
+            </div>
+            <div className="know-ballot">
+                <Link to="/quiz">Get Started!</Link>
             </div>
             <div className="NYC-background">
                 <img className="img-logo" src={`../../../assets/images/NYC_image.jpg`}/>

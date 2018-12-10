@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import * as actions from '../actions';
 
@@ -65,8 +66,10 @@ class Result extends Component {
                   placeholder="test@example.com"
                   autoFocus />
               </div>
-              <button className="btn btn-primary">Email My Results</button>
-              <button className="btn btn-primary">Learn More About The Candidates</button>
+              <button className="btn btn-primary btn-space">Email My Results</button>
+              <Link to={`/candidates`}>
+                <button className="btn btn-primary btn-space">Learn More About The Candidates</button>
+              </Link>
             </form>
           </div>
         </div>
