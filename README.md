@@ -1,3 +1,3 @@
 # LumiVote
 
-Welcome to the Team Votem's github repo!
+Welcome to the github repo for the product LumiVote!
